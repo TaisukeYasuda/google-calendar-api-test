@@ -80,7 +80,7 @@ def query_api():
 
 @app.route("/")
 def hello():
-    return "Hello world."
+    return render_template('index.html')
 
 @app.route("/gp", methods=["GET"])
 def get_google_calendar():
